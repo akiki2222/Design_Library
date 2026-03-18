@@ -3,7 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <header>
+    <div class="logo">
+      <img src="./img/ロゴ.svg" width="300" alt="ロゴ" />
+    </div>
+    <nav class="pc_nav">
+      <ul>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- workここから -->
+    <section>
+      <h2 class="section_title">Works</h2>
+      <div class="filter">
+        <span>All</span>
+        <span>Illustration</span>
+        <span>Dtp</span>
+        <span>Web</span>
+      </div>
+      <div class="gallery">
+        <div class="pictures">
+          <img
+            src="img/kadai3_Shiobara03OL_ページ_1.jpg"
+            width="300"
+            alt="Web"
+          />
+          <img src="img/5.jpg" width="300" alt="イラスト" />
+          <img
+            src="img/バナー練習プログラミング.jpg"
+            width="300"
+            alt="Web"
+          />
+          <img src="img/IMG_0446.JPG" width="300" alt="イラスト" />
+          <img src="img/IMG_0712.jpg" width="300" alt="イラスト" />
+          <img src="img/kadai2のコピー.jpg" width="300" alt="Web" />
+          <img src="img/kadai01-02のコピー.jpg" width="300" alt="Web" />
+          <img src="img/7.jpg" width="300" alt="イラスト" />
+          <img src="img/IMG_0805.jpg" width="300" alt="イラスト" />
+          <img src="img/地産地消2.jpg" width="300" alt="Dtp" />
+          <img src="img/9.jpg" width="300" alt="イラスト" />
+          <img src="img/英会話バナー２.jpg" width="300" alt="Web" />
+          <img src="img/11.jpg" width="300" alt="Dtp" />
+          <img src="img/IMG_0157.JPG" width="300" alt="イラスト" />
+          <img
+            src="img/バナー練習　クレンジング.jpg"
+            width="300"
+            alt="Web"
+          />
+          <img src="img/筋肉太郎.jpg" width="300" alt="Dtp" />
+        </div>
+      </div>
+    </section>
+    <!-- Workここまで -->
+    <!-- aboutここから -->
+    <section>
+      <h2 class="section_title">About</h2>
+      <div class="my information">
+        <div class="myface">
+          <img src="img/my face.svg" width="200" alt="自己紹介" />
+        </div>
+        <p class="name">塩原　亜季子</p>
+        <p class="location">岩手県在住</p>
+        <p class="introduce">
+          似顔絵を手渡したときに見せてくれた笑顔が忘れられず、“人を笑顔にするデザイン”を目指すようになりました。<br />一人旅が好きな行動力お化け。しかし40を過ぎてからおうち時間の良さに気付く。（億劫になっている可能性大。）<br />エヴァンゲリオンの呪縛から解放されないアラフォー。
+        </p>
+        <div class="history">
+          <h3 class="history">経歴</h3>
+          <p>2005年 代々木アニメーション学院 卒業</p>
+          <p>2021年 にがおえがお 開業</p>
+        </div>
+      </div>
+    </section>
+    <!-- aboutここまで -->
+    <!-- contactここから -->
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJh4Z8PhwSpYIARpGRE6akuXfmp89MDh7Jr-N2z7iqNKhPUg/formResponse"
+        method="POST"
+      >
+        <label for="name">お名前</label>
+        <input id="name" type="text" name="entry.1975025749" required />
+
+        <label for="email">メールアドレス</label>
+        <input id="email" type="email" name="entry.1072622136" required />
+
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="entry.1425299279" required></textarea>
+
+        <button type="submit">送信する</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_logo">
+      <img src="img/ロゴ.svg" width="200" alt="フッターロゴ" />
+    </div>
+    <div class="sns_logo">
+      <img src="img/Xロゴ.svg" width="50" alt="X ロゴ" />
+      <img src="img/インスタロゴ.svg" width="50" alt="insta ロゴ" />
+    </div>
+    <p>© Design Library</p>
+  </footer>
 </html>
