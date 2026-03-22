@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #3e3a39;
+  font-family: "Didot", "游ゴシック体", serif;
+  font-feature-settings: "palt";
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+body {
+  color: #3e3a39;
+  font-family: "Didot", "游ゴシック体", serif;
+  font-feature-settings: "palt";
+  background-color: #ffff;
+}
+
+/* コンテンツ幅 */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+header {
+  padding: 20px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  height: 40px;
+}
+.pc_nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3e3a39;
+  font-family: "Didot", serif;
+  font-size: 18px;
+}
+.Works {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section_title h2 {
+  font-family: "Didot", serif;
+  margin-bottom: 0px;
+  font-size: 23px;
+}
+.filter {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+/* 4列グリッド */
+.works-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.works-item {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.works-item img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+/* aboutここから */
+.about {
+  background-color: #c9caca;
+  padding: 100px 0;
+}
+.about_container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.my_information {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.myface img {
+  width: 200px;
+}
+
+.section_title {
+  font-family: "Didot", serif;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.about_text {
+  max-width: 400px;
+}
+.name {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.location {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.introduce {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.history_area {
+  border-top: 1px solid #3e3a39;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 80px;
+}
+.history_title {
+  font-weight: normal;
+  font-size: 20px;
+}
+.history {
+  text-align: left;
+}
+.history p {
+  margin-bottom: 10px;
+}
+/* aboutここまで */
+/* ここからコンタクト */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: "Didot", serif;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3e3a39;
+  margin-top: 5px;
+  background: transparent;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 30px;
+  border: 1px solid #3e3a39;
+  background: transparent;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  gap: 20px;
+  background-color: #c9caca;
+}
+.footer_logo img {
+  width: 20%;
+}
+.sns_logo img {
+  width: 3%;
+}
+footer p {
+  font-size: 8px;
+}
