@@ -14,72 +14,72 @@
         </h1>
         <nav class="pc_nav">
           <ul>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#work">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <!-- workここから -->
-      <section class="Works">
+      <section class="Works" id="Works">
         <div class="container">
           <h2 class="section_title_works">Works</h2>
 
           <div class="filter">
-            <span>All</span>
-            <span>Illustration</span>
-            <span>Dtp</span>
-            <span>Web</span>
+            <button>All</button>
+            <button>Illustration</button>
+            <button>Dtp</button>
+            <button>Web</button>
           </div>
           <div class="works-list">
-            <div class="works-item">
+            <div class="works-item" data-category="web">
               <img src="img/web_hamburger.jpg" alt="Web" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_dog.jpg" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="web">
               <img src="img/web_school.jpg" alt="Web" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_naomi.JPG" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_fujii.jpg" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="web">
               <img src="img/web_icecream.jpg" alt="Web" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="web">
               <img src="img/web_mobileplan.jpg" alt="Web" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_wedding2.jpg" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_kiyo.jpg" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="dtp">
               <img src="img/dtp_event-flyer1.jpg" alt="Dtp" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_nigaoe2.jpg" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="web">
               <img src="img/web_english-school.jpg" alt="Web" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="dtp">
               <img src="img/dtp_dentalclinic.jpg" alt="Dtp" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="illustration">
               <img src="img/illustration_namie.JPG" alt="イラスト" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="web">
               <img src="img/web_cleansing.jpg" alt="Web" />
             </div>
-            <div class="works-item">
+            <div class="works-item" data-category="dtp">
               <img src="img/illustration_muscle.jpg" alt="Dtp" />
             </div>
           </div>
@@ -87,7 +87,7 @@
       </section>
       <!-- Workここまで -->
       <!-- aboutここから -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about_container">
           <h2 class="section_title">About</h2>
           <div class="my_information">
@@ -115,7 +115,7 @@
       <!-- aboutここまで -->
       <!-- contactここから -->
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Contact</h2>
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJh4Z8PhwSpYIARpGRE6akuXfmp89MDh7Jr-N2z7iqNKhPUg/formResponse"
@@ -139,10 +139,17 @@
         <img src="img/title-rogo.svg" alt="フッターロゴ" />
       </div>
       <div class="sns_logo">
+        <a href="https://x.com/@aoi1222aki" target="_blank">
         <img src="img/Xrogo.svg" alt="X ロゴ" />
-        <img src="img/instagram-rogo.svg" alt="insta ロゴ" />
+        </a>
+        <a href="https://www.instagram.com/nigaoegaoakiko" target="_blank">
+        <img src="img/instagram-rogo.svg" alt="instagram ロゴ" />
+        </a>
       </div>
-      <p>© Design Library</p>
+      <p>© Nigaoegao</p>
     </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
   </body>
 </html>
