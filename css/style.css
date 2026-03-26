@@ -42,8 +42,7 @@ html {
 }
 /* コンテンツ幅 */
 .container {
-  max-width:;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 header {
@@ -86,13 +85,15 @@ nav a {
   gap: 10px;
   margin: 30px 0;
   justify-content: center;
-  width: fit-content;
 }
 .filter button {
   background: none;
   border: none;
   cursor: pointer;
   font-size: 14px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin: 0 20px;
 }
 .filter button:hover {
   border-bottom: 2px solid #1a98a4;
@@ -175,10 +176,14 @@ nav a {
 .history_title {
   font-weight: normal;
   font-size: 20px;
+  width: 200px;
+  text-align: center;
 }
 .history {
   text-align: left;
+  width: 400px;
 }
+
 .history p {
   margin-bottom: 10px;
 }
@@ -213,6 +218,7 @@ textarea {
   border: 1px solid #3e3a39;
   margin-top: 5px;
   background: transparent;
+  box-sizing: border-box;
 }
 
 textarea {
