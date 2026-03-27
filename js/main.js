@@ -14,3 +14,12 @@ filters.forEach((filter) => {
     });
   });
 });
+
+$(document).ready(function(){
+  var modal = $('[data-remodal-id="works-modal"]').remodal();
+
+  $('.works-item').on('click', function(){
+    $('#remodal-img').attr('src', $(this).data('img'));
+    modal.open();
+  });
+});
