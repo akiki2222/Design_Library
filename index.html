@@ -332,6 +332,9 @@
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJh4Z8PhwSpYIARpGRE6akuXfmp89MDh7Jr-N2z7iqNKhPUg/formResponse"
           method="POST"
+          target="hidden_iframe"
+          onsubmit="submitted = true"
+          class="c-form"
         >
           <label for="name">お名前</label>
           <input id="name" type="text" name="entry.1975025749" required />
@@ -361,7 +364,7 @@
       <p>© Nigaoegao</p>
     </footer>
 
-    <a href="#works-modal">ボタン</a>
+    <!-- <a href="#works-modal">ボタン</a> -->
 
     <div class="remodal" data-remodal-id="works-modal">
       <button data-remodal-action="close" class="remodal-close"></button>
@@ -378,5 +381,18 @@
         <p><span>使用媒体</span><span id="remodal-media"></span></p>
       </div>
     </div>
+    <script type="text/javascript">
+      let submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="
+        if (submitted) {
+          window.location = './thanks.html';
+        }
+      "
+    ></iframe>
   </body>
 </html>

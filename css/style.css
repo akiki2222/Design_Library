@@ -296,5 +296,87 @@ footer p {
 .remodal-info p span:first-child {
   min-width: 90px;
   font-weight: bold;
-  flex-shrink: 0; /* ← ラベルが縮まないようにする */
+  flex-shrink: 0;
+}
+/* thanks.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.thanks-wrap {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.thanks-title {
+  font-size: 2.5rem;
+  color: #1a98a4;
+  font-family: Didot;
+  margin-bottom: 30px;
+}
+
+.thanks-balloon {
+  position: relative;
+  border: 1.5px solid #3e3a39;
+  border-radius: 20px;
+  padding: 36px 48px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.thanks-ballon p {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.thanks-img {
+  width: 80px;
+  margin: 20px auto 30px;
+  display: block;
+}
+
+.thanks-btn {
+  display: inline-block;
+  border: 2px solid #fff67f;
+  background: #fff67f;
+  padding: 12px 32px;
+  text-decoration: none;
+  color: #3e3a39;
+  font-size: 0.95rem;
+}
+
+.thanks-btn:hover {
+  opacity: 0.8;
+}
+.thanks-ballon-material {
+  width: 350px;
+}
+.thanks-btn {
+  display: inline-block;
+  border: 2px solid #3e3a39;
+  background: #fff67f;
+  padding: 16px 48px;
+  text-decoration: none;
+  color: #3e3a39;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+.arrow-right {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  border-top: 2px solid #3e3a39;
+  border-right: 2px solid #3e3a39;
+  transform: rotate(45deg);
 }

@@ -28,10 +28,10 @@ $(document).ready(function () {
   });
 });
 $('form').on('submit', function(e){
-  e.preventDefault();  // ← 通常の送信をいったん止める
+  e.preventDefault();  
   var form = this;
   setTimeout(function(){
-    form.submit();  // ← フォームを送信
-    window.location.href = 'thanks.html';  // ← ページ遷移
+    form.submit();  
+    window.location.href = 'thanks.html';  
   }, 100);
 });
