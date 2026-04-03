@@ -244,7 +244,7 @@ footer {
   background-color: #c9caca;
 }
 .footer_logo img {
-  width: 20%;
+  width: 300px;
 }
 .sns_logo {
   gap: 15px;
@@ -305,7 +305,7 @@ footer p {
   box-sizing: border-box;
 }
 
-body {
+.thanks-page {
   background: #fff;
   display: flex;
   justify-content: center;
@@ -379,4 +379,85 @@ body {
   border-top: 2px solid #3e3a39;
   border-right: 2px solid #3e3a39;
   transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  /* ヘッダー */
+  .header-inner {
+    padding: 0 20px;
+  }
+  .pc_nav {
+    display: none;
+  }
+
+  /* Works */
+  .filter {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .filter button {
+    border: 1px solid #3e3a39 !important;
+    padding: 8px 0;
+    font-size: 14px;
+    margin: 0px;
+    width: 45%;
+    font-family: Didot;
+  }
+  .works-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .works-item {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* About */
+  .my_information {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .history_area {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .history_title {
+    width: 100%;
+  }
+  .history {
+    width: 100%;
+  }
+
+  /* Contact */
+  form {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer_logo img {
+    width: 200px;
+  }
+
+  /* Thanks */
+  .thanks-ballon-material {
+    width: 90%;
+  }
+  .thanks-balloon {
+    padding: 24px 20px;
+  }
+  .filter button {
+    border: 1px solid #3e3a39 !important;
+    padding: 8px 0;
+    font-size: 12px;
+    margin: 0;
+    width: 40%;
+  }
+  .filter button:hover {
+    border-bottom: 1px solid #3e3a39 !important;
+    padding: 10px 0 !important;
+    background-color: #1a98a4;
+    color: #fff;
+  }
 }
