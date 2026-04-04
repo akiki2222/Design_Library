@@ -1,23 +1,28 @@
-$(document).ready(function () {
-  var modal = $('[data-remodal-id="works-modal"]').remodal();
+const filters = document.querySelectorAll(".filter button");
+const items = document.querySelectorAll(".works-item");
 
-  $(".filter button").on("click", function () {
-    var selected = $(this).text().toLowerCase();
+filters.forEach((filter) => {
+  filter.addEventListener("click", () => {
+    const selected = filter.textContent.toLowerCase();
 
-    $(".works-item").each(function () {
-      if (selected === "all" || $(this).data("category") === selected) {
-        $(this).removeClass("inactive");
+    items.forEach((item) => {
+      if (selected === "all" || item.dataset.category === selected) {
+        item.classList.remove("inactive");
       } else {
-        $(this).addClass("inactive");
+        item.classList.add("inactive");
       }
     });
   });
+});
+
+$(document).ready(function () {
+  var modal = $('[data-remodal-id="works-modal"]').remodal();
 
   $(".works-item").on("click", function () {
     $("#remodal-img").attr("src", $(this).data("img"));
     $("#remodal-title").text($(this).data("title"));
     $("#remodal-client").text($(this).data("client"));
-    $("#remodal-tool").text($(this).data("tool"));
+    $("#remodal-tool").text($(this).data(""));
     $("#remodal-size").text($(this).data("size"));
     $("#remodal-purpose").text($(this).data("purpose"));
     $("#remodal-concept").text($(this).data("concept"));
@@ -26,12 +31,25 @@ $(document).ready(function () {
     $("#remodal-media").text($(this).data("media"));
     modal.open();
   });
-});
-$('form').on('submit', function(e){
-  e.preventDefault();  
-  var form = this;
-  setTimeout(function(){
-    form.submit();  
-    window.location.href = 'thanks.html';  
-  }, 100);
+
+  // ハンバーガーメニュー
+  const hamburger = document.getElementById("hamburger");
+  const spNav = document.getElementById("sp_nav");
+  const spNavClose = document.getElementById("sp_nav_close");
+
+  hamburger.addEventListener("click", function () {
+    spNav.classList.add("open");
+    hamburger.classList.add("open");
+  });
+
+  spNavClose.addEventListener("click", function () {
+    spNav.classList.remove("open");
+    hamburger.classList.remove("open");
+  });
+
+  spNav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      spNav.classList.remove("open");
+    });
+  });
 });
