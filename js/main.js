@@ -31,24 +31,18 @@ $(document).ready(function () {
     $("#remodal-media").text($(this).data("media"));
     modal.open();
   });
-
   // ハンバーガーメニュー
   const hamburger = document.getElementById("hamburger");
   const spNav = document.getElementById("sp_nav");
-  const spNavClose = document.getElementById("sp_nav_close");
 
   hamburger.addEventListener("click", function () {
-    spNav.classList.add("open");
-    hamburger.classList.add("open");
-  });
-
-  spNavClose.addEventListener("click", function () {
-    spNav.classList.remove("open");
-    hamburger.classList.remove("open");
+    hamburger.classList.toggle("open");
+    spNav.classList.toggle("open");
   });
 
   spNav.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
+      hamburger.classList.remove("open");
       spNav.classList.remove("open");
     });
   });
