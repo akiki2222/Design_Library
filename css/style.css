@@ -119,6 +119,9 @@ nav a {
   display: block;
   object-fit: contain;
 }
+.more-btn {
+  display: none;
+} 
 .works-item.inactive {
   opacity: 0.3; /* 薄くする */
 }
@@ -387,6 +390,38 @@ footer p {
   border-right: 2px solid #3e3a39;
   transform: rotate(45deg);
 }
+.remodal-prev,
+.remodal-next {
+  position: fixed;
+  top: 50vh;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 99999;
+  padding: 16px;
+}
+.remodal-prev {
+  left: 8px;
+}
+.remodal-next {
+  right: 8px;
+}
+.remodal-prev::after,
+.remodal-next::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 1.5px solid #3e3a39;
+  border-right: 1.5px solid #3e3a39;
+}
+.remodal-prev::after {
+  transform: rotate(-135deg); /* 左向き */
+}
+.remodal-next::after {
+  transform: rotate(45deg); /* 右向き */
+}
 
 @media (max-width: 768px) {
   /* ヘッダー */
@@ -424,12 +459,30 @@ footer p {
 
   .works-list {
     grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+    margin-top: 40px;!important;
   }
   .works-item {
     width: 70%;
     margin: 0 auto;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
+  .more-btn {
+    display:block;
+    width: 80%;
+    margin: 40px auto;
+    padding: 16px 0;
+    text-align: center;
+    border: 1px solid #3e3a39;
+    color: #3e3a39;
+    text-decoration:none;
+    font-size: 14px;
+  }
+  .more-btn::after {
+    content: ">";
+    margin-left: 8px;
+  }
+
 
   /* About */
   .my_information {
@@ -580,25 +633,35 @@ footer p {
   .thanks-ballon-material {
     width: 100%;
   }
-}
 .remodal-prev,
 .remodal-next {
   position: fixed;
-  top: 50%;
+  top: 50vh;
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 64px;
-  font-weight: 100;
   cursor: pointer;
-  color: #3e3a39;
-  z-index: 10000;
-  line-height: 1;
-  padding: 0;
+  z-index: 99999;
+  padding: 16px;
 }
 .remodal-prev {
-  left: -10px;
+  left: 8px;
 }
 .remodal-next {
-  right: -10px;
+  right: 8px;
+}
+.remodal-prev::after,
+.remodal-next::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 1.5px solid #3e3a39;
+  border-right: 1.5px solid #3e3a39;
+}
+.remodal-prev::after {
+  transform: rotate(-135deg); /* 左向き */
+}
+.remodal-next::after {
+  transform: rotate(45deg); /* 右向き */
 }
