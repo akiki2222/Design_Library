@@ -421,15 +421,15 @@ footer p {
 }
 .list-btn {
   grid-column: 1 / -1; 
-  width: 100% !important;
-  text-align: right !important; 
+  width: 100% ;
+  text-align: right ; 
   margin-top: 40px;
   padding-right: 0%;
 }
 
 .list-btn #more-btn {
   margin: 0 0 0 auto;
-  display: inline-block !important;
+  display: inline-block ;
 }
 
 @media (max-width: 768px) {
@@ -464,7 +464,7 @@ footer p {
   }
 
   .filter button {
-    border: 1px solid #3e3a39 !important;
+    border: 1px solid #3e3a39 ;
     padding: 8x 0;
     font-size: 14px;
     margin: 0px;
@@ -473,16 +473,16 @@ footer p {
     font-family: Didot;
   }
   .filter button:hover {
-    background: none !important;
-    color: #3e3a39 !important;
-    border: 1px solid #3e3a39 !important;
-    padding: 8px 0 !important;
+    background: none ;
+    color: #3e3a39 ;
+    border: 1px solid #3e3a39 ;
+    padding: 8px 0 ;
   }
 
   .works-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 80px;
-    margin-top: 40px;!important;
+    margin-top: 40px ;
   }
   .works-item {
     width: 70%;
@@ -493,7 +493,7 @@ footer p {
     display:  none;
   }
 .works-item.is-show {
-  display: block !important;
+  display: block ;
 }
 
   /* About */
@@ -684,4 +684,5 @@ footer p {
 }
 .remodal-next::after {
   transform: rotate(45deg); /* 右向き */
+}
 }
