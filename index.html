@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="remodal/remodal-default-theme.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="remodal/remodal.min.js"></script>
-    <script src="js/main.js"></script>
   </head>
   <body>
     <header>
@@ -33,16 +32,16 @@
 
         <!-- スマホメニュー -->
         <div class="sp_nav" id="sp_nav">
-            <div class="sp_nav_inner">
-              <h1 class="logo">
-                <img src="./img/title-rogo.svg" alt="ロゴ" />
-              </h1>
-          <ul>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-            </div>
+          <div class="sp_nav_inner">
+            <h1 class="logo">
+              <img src="./img/title-rogo.svg" alt="ロゴ" />
+            </h1>
+            <ul>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -124,7 +123,7 @@
               <img src="img/illustration_naomi.JPG" alt="イラスト" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="illustration"
               data-img="img/illustration_fujii.jpg"
               data-title="イラスト 藤井聡太"
@@ -140,7 +139,7 @@
               <img src="img/illustration_fujii.jpg" alt="イラスト" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="web"
               data-img="img/web_icecream.jpg"
               data-title="バナー アイスクリーム"
@@ -156,7 +155,7 @@
               <img src="img/web_icecream.jpg" alt="Web" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="web"
               data-img="img/web_mobileplan.jpg"
               data-title="バナー スマホプラン"
@@ -172,7 +171,7 @@
               <img src="img/web_mobileplan.jpg" alt="Web" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="illustration"
               data-img="img/illustration_wedding2.jpg"
               data-title="ウェルカムボード"
@@ -188,7 +187,7 @@
               <img src="img/illustration_wedding2.jpg" alt="イラスト" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="illustration"
               data-img="img/illustration_kiyo.jpg"
               data-title="イラスト 清水希容"
@@ -204,7 +203,7 @@
               <img src="img/illustration_kiyo.jpg" alt="イラスト" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="dtp"
               data-img="img/dtp_event-flyer1.jpg"
               data-title="地産地消イベント フライヤー"
@@ -220,7 +219,7 @@
               <img src="img/dtp_event-flyer1.jpg" alt="Dtp" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="illustration"
               data-img="img/illustration_nigaoe2.jpg"
               data-title="似顔絵"
@@ -236,7 +235,7 @@
               <img src="img/illustration_nigaoe2.jpg" alt="イラスト" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="web"
               data-img="img/web_english-school.jpg"
               data-title="バナー 英会話スクール"
@@ -252,7 +251,7 @@
               <img src="img/web_english-school.jpg" alt="Web" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="dtp"
               data-img="img/dtp_dentalclinic.jpg"
               data-title="診察券 歯科医院"
@@ -268,7 +267,7 @@
               <img src="img/dtp_dentalclinic.jpg" alt="Dtp" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="illustration"
               data-img="img/illustration_namie.JPG"
               data-title="イラスト 安室奈美恵"
@@ -284,7 +283,7 @@
               <img src="img/illustration_namie.JPG" alt="イラスト" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="web"
               data-img="img/web_cleansing.jpg"
               data-title="バナー 化粧品"
@@ -300,7 +299,7 @@
               <img src="img/web_cleansing.jpg" alt="Web" />
             </div>
             <div
-              class="works-item"
+              class="works-item is-hidden"
               data-category="dtp"
               data-img="img/illustration_muscle.jpg"
               data-title="トレーニングジム キャラクター"
@@ -314,11 +313,13 @@
               data-media="web"
             >
               <img src="img/illustration_muscle.jpg" alt="Dtp" />
-              <a href="#modal_more" class="more-btn">もっと見る</a>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="list-btn">
+            <button id="more-btn">もっと見る</button>
+          </div>
+          </div>
+        </section>
 
       <!-- Workここまで -->
       <!-- aboutここから -->
@@ -418,5 +419,10 @@
         }
       "
     ></iframe>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

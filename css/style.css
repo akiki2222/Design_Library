@@ -119,9 +119,6 @@ nav a {
   display: block;
   object-fit: contain;
 }
-.more-btn {
-  display: none;
-} 
 .works-item.inactive {
   opacity: 0.3; /* 薄くする */
 }
@@ -422,6 +419,18 @@ footer p {
 .remodal-next::after {
   transform: rotate(45deg); /* 右向き */
 }
+.list-btn {
+  grid-column: 1 / -1; 
+  width: 100% !important;
+  text-align: right !important; 
+  margin-top: 40px;
+  padding-right: 0%;
+}
+
+.list-btn #more-btn {
+  margin: 0 0 0 auto;
+  display: inline-block !important;
+}
 
 @media (max-width: 768px) {
   /* ヘッダー */
@@ -441,6 +450,19 @@ footer p {
     width: 80%;
     margin: 30px auto;
   }
+
+  .list-btn {
+    width: 100%;
+    text-align: center;
+    padding-right: 0; 
+    margin-top: 30px;
+    display: block;
+  }
+  .list-btn #more-btn {
+    margin: 30px auto 0 ;
+    display: inline-block;
+  }
+
   .filter button {
     border: 1px solid #3e3a39 !important;
     padding: 8x 0;
@@ -464,32 +486,30 @@ footer p {
   }
   .works-item {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
-  .more-btn {
-    display:block;
-    width: 80%;
-    margin: 40px auto;
-    padding: 16px 0;
-    text-align: center;
-    border: 1px solid #3e3a39;
-    color: #3e3a39;
-    text-decoration:none;
-    font-size: 14px;
+  .works-item.is-hidden {
+    display:  none;
   }
-  .more-btn::after {
-    content: ">";
-    margin-left: 8px;
-  }
-
+.works-item.is-show {
+  display: block !important;
+}
 
   /* About */
   .my_information {
     flex-direction: column;
     gap: 30px;
   }
-
+  .about_text .name,
+  .about_text .location {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .about_text .introduce {
+    text-align: left;
+  }
   .history_area {
     flex-direction: column;
     gap: 30px;
