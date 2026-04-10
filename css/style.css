@@ -112,6 +112,7 @@ nav a {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  cursor: pointer;
 }
 .works-item img {
   width: 100%;
@@ -420,16 +421,16 @@ footer p {
   transform: rotate(45deg); /* 右向き */
 }
 .list-btn {
-  grid-column: 1 / -1; 
-  width: 100% ;
-  text-align: right ; 
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: right;
   margin-top: 40px;
   padding-right: 0%;
 }
 
 .list-btn #more-btn {
   margin: 0 0 0 auto;
-  display: inline-block ;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -454,17 +455,17 @@ footer p {
   .list-btn {
     width: 100%;
     text-align: center;
-    padding-right: 0; 
+    padding-right: 0;
     margin-top: 30px;
     display: block;
   }
   .list-btn #more-btn {
-    margin: 30px auto 0 ;
+    margin: 30px auto 0;
     display: inline-block;
   }
 
   .filter button {
-    border: 1px solid #3e3a39 ;
+    border: 1px solid #3e3a39;
     padding: 8x 0;
     font-size: 14px;
     margin: 0px;
@@ -473,16 +474,16 @@ footer p {
     font-family: Didot;
   }
   .filter button:hover {
-    background: none ;
-    color: #3e3a39 ;
-    border: 1px solid #3e3a39 ;
-    padding: 8px 0 ;
+    background: none;
+    color: #3e3a39;
+    border: 1px solid #3e3a39;
+    padding: 8px 0;
   }
 
   .works-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 80px;
-    margin-top: 40px ;
+    margin-top: 40px;
   }
   .works-item {
     width: 70%;
@@ -490,11 +491,11 @@ footer p {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
   .works-item.is-hidden {
-    display:  none;
+    display: none;
   }
-.works-item.is-show {
-  display: block ;
-}
+  .works-item.is-show {
+    display: block;
+  }
 
   /* About */
   .my_information {
@@ -648,41 +649,41 @@ footer p {
   }
 
   .sp_nav .logo img {
-    width: 120px;
+    width: 180px;
   }
   .thanks-ballon-material {
     width: 100%;
   }
-.remodal-prev,
-.remodal-next {
-  position: fixed;
-  top: 50vh;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 99999;
-  padding: 16px;
-}
-.remodal-prev {
-  left: 8px;
-}
-.remodal-next {
-  right: 8px;
-}
-.remodal-prev::after,
-.remodal-next::after {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  border-top: 1.5px solid #3e3a39;
-  border-right: 1.5px solid #3e3a39;
-}
-.remodal-prev::after {
-  transform: rotate(-135deg); /* 左向き */
-}
-.remodal-next::after {
-  transform: rotate(45deg); /* 右向き */
-}
+  .remodal-prev,
+  .remodal-next {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 99999;
+    padding: 16px;
+  }
+  .remodal-prev {
+    left: 8px;
+  }
+  .remodal-next {
+    right: 8px;
+  }
+  .remodal-prev::after,
+  .remodal-next::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 1.5px solid #3e3a39;
+    border-right: 1.5px solid #3e3a39;
+  }
+  .remodal-prev::after {
+    transform: rotate(-135deg); /* 左向き */
+  }
+  .remodal-next::after {
+    transform: rotate(45deg); /* 右向き */
+  }
 }
