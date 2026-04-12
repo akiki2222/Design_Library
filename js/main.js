@@ -22,6 +22,9 @@ filters.forEach((filter) => {
   filter.addEventListener("click", () => {
     const selected = filter.textContent.toLowerCase();
 
+    filters.forEach(f => f.classList.remove("active"));
+    filter.classList.add("active");
+
     items.forEach((item) => {
       if (selected === "all" || item.dataset.category === selected) {
         item.classList.remove("inactive");

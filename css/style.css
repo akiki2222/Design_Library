@@ -99,7 +99,9 @@ nav a {
   border-bottom: 2px solid #1a98a4;
   padding-bottom: 2px;
 }
-
+.filter button.active {
+  border-bottom: 2px solid #1a98a4;
+}
 /* 4列グリッド */
 .works-list {
   display: grid;
@@ -163,6 +165,12 @@ nav a {
 .introduce {
   font-size: 14px;
   line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  line-break: strict;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .history_area {
   border-top: 1px solid #3e3a39;
@@ -201,7 +209,7 @@ nav a {
 }
 
 form {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   text-align: left;
 }
@@ -479,7 +487,11 @@ footer p {
     border: 1px solid #3e3a39;
     padding: 8px 0;
   }
-
+  .filter button.active {
+    background-color: #1a98a4;
+    border-color: #3e3a39;
+    color: #fff;
+  }
   .works-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 80px;
